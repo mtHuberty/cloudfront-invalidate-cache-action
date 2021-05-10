@@ -1,0 +1,9 @@
+name: "Cloudfront Invalidate Cache"
+description: "Request cache invalidation for all files in a cloudfront distribution"
+author: mtHuberty 
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: green
