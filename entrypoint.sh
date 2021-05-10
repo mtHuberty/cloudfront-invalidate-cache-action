@@ -34,8 +34,7 @@ EOF
 sh -c "aws cloudfront create-invalidation \
 	      --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} \
 	      --paths \"/*\" \
-              --profile cloudfront-invalidate-cache-action \
-              --no-progress"
+              --profile cloudfront-invalidate-cache-action"
 
 # Clear out credentials after we're done.
 # We need to re-run `aws configure` with bogus input instead of
